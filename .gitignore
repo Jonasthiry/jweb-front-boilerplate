@@ -1,0 +1,3 @@
+node_modules
+/static
+/front/package-lock.json
