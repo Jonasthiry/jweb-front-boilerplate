@@ -1,0 +1,30 @@
+.header-navigation {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  .menu {
+    
+    @include list-reset;
+    display: flex;
+
+    li {
+      margin: 0 20px;
+      @include margin-first-last;
+    }
+
+    a {
+      display: block;
+      padding: 15px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+  }
+
+}

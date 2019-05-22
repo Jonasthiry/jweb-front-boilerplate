@@ -1,0 +1,27 @@
+/**
+ * Media
+ */
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+img[width],
+img[height] {
+  max-width: none;
+}
+
+figure {
+  margin: 0;
+}
+
+object,
+iframe,
+embed,
+canvas,
+video,
+audio {
+  max-width: 100%;
+}

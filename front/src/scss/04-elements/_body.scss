@@ -1,0 +1,26 @@
+/**
+ * Body
+ */
+
+body {
+  font-family: $font-primary;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $body-color;
+  background-color: $body-background;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  &.is-modal-open {
+    overflow: hidden;
+  }
+
+  &.is-nav-mobile-open {
+    overflow: hidden;
+
+    @include mq($from: desktop) {
+      overflow: visible;
+    }
+  }
+}

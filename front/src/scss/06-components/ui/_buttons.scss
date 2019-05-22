@@ -1,0 +1,122 @@
+/**
+ * Buttons
+ */
+
+input.btn,
+button.btn {
+  @include reset-button-style;
+}
+
+@mixin btn {
+  vertical-align: top;
+  display: inline-block;
+  text-decoration: none !important;
+
+  font-family: $font-primary;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: white;
+  padding: 20px 40px;
+  background-color: $color-secondary;
+
+  transition: .3s background $ease-out-quad;
+  
+  &:focus,
+  &:active,
+  &:hover {
+    background-color: rgba($color-secondary,.7);
+    color: white;
+  }
+
+}
+
+input.btn,
+button.btn,
+.btn {
+  @include btn;
+
+  &:hover,
+  &:focus,
+  &:active {
+    .icon {
+      &.angle-left { transform: translateX(-5px); }
+      &.angle-right { transform: translateX(5px); }
+    }
+  }
+
+  .icon {
+    @include size(10px,19px);
+    fill: white;
+    vertical-align: top;
+    transition: .3s transform $ease-out-quint;
+
+    &.angle-left { margin-right: 10px; }
+    &.angle-right { margin-left: 10px; }
+  }
+}
+
+.btn--transparent {
+  background-color: transparent;
+  color: $color-secondary;
+  padding: 20px 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgba($color-secondary,.7);
+    background-color: transparent;
+  }
+
+  .icon {
+    fill: $color-secondary;
+  }
+}
+
+.btn--white {
+  color: white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgba(white,.7);
+  }
+
+  .icon {
+    fill: white;
+  }
+}
+
+.c-button {
+  .c-text + & {
+    margin-top: 60px;
+    @include mq($until: tablet) {
+      margin-top: 30px;
+    }
+  }
+  &--center {
+    text-align: center;
+  }
+}
+
+.c-buttons {
+  
+  .c-button {
+    margin: 0 20px;
+    display: inline-block;
+
+    @include mq($until: tablet) {
+      display: block;
+      margin: 0;
+
+      .cookies & {
+        display: inline-block;
+        margin: 0 20px;
+      }
+    }
+
+    @include margin-first-last;
+  }
+}

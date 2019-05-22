@@ -1,0 +1,17 @@
+<div class="c-button{% if button.align %} c-button--{{ button.align }}{% endif %}">
+  
+  <a href="{{ button.url }}" class="btn{% if button.transparent %} btn--transparent{% endif %}{% if button.color %} btn--{{ button.color }}{% endif %}">
+
+    {% if button.icon == 'angle-left' %}
+    {% include 'c-svg.html.twig' with button %}
+    {% endif %}
+
+    {{ button.label }}
+
+    {% if button.icon == 'angle-right' %}
+    {% include 'c-svg.html.twig' with button %}
+    {% endif %}
+
+  </a>
+
+</div>

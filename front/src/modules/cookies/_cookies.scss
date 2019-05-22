@@ -1,0 +1,77 @@
+.cookies {
+  @include fixed(null,0,0,null);
+  background-color: $color-secondary;
+  color: white;
+  padding: 40px 60px;
+
+  @include mq($until: phablet) {
+    left: 0;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
+
+  p,
+  .c-button {
+    transition: .5s transform $ease-out-quint, .5s opacity $ease-out-quint;
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  .btn {
+    padding: 10px 0;
+  }
+
+  transition: .6s transform .8s $ease-in-out-quart;
+  transform: translateX(100%);
+
+  &.is-animate {
+    transform: translateX(0);
+    p,
+    .c-button {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    p {
+      transition-delay: 1.3s;
+    }
+
+    .c-button {
+      &:nth-child(1) {
+        transition-delay: 1.4s;
+      }
+      &:nth-child(2) {
+        transition-delay: 1.5s;
+      }
+    }
+
+  }
+
+  &.is-remove {
+    transition: .6s transform .45s $ease-in-out-quart;
+    transform: translateX(100%);
+    p,
+    .c-button {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    p {
+      transition-delay: .1s;
+    }
+
+    .c-button {
+      &:nth-child(1) {
+        transition-delay: .2s;
+      }
+      &:nth-child(2) {
+        transition-delay: .3s;
+      }
+    }
+    
+  }
+}

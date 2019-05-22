@@ -1,0 +1,13 @@
+<ul class="menu">
+
+  {% for item in header.navigation %}
+    <li id="menu-item-{{ item.id }}" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-{{ item.id }}{% if current == item.id %} current-menu-item{% endif %}{% if item.button %} button{% endif %}">
+
+      <a href="{{ item.url }}" target="{{ item.target|default('_self') }}" {% if target == '_blank' %}rel="noopener"{% endif %}>
+        {{ item.title }}
+      </a>
+
+    </li>
+  {% endfor %}
+
+</ul>

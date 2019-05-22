@@ -1,0 +1,25 @@
+/**
+ * Colors
+ */
+
+$color-primary:     #001429;
+$color-secondary:   #1abc9c;
+$color-tertiary:    rgba(white,.3);
+
+$color-text:        black;
+$color-border:      lightgray;
+$color-link:        $color-primary;
+$color-title:       $color-secondary;
+
+$color-danger:      red;
+$color-success:     green;
+$color-warning:     orange;
+$color-info:        blue;
+
+$body-color:        $color-text;
+$body-background:   white;
+
+$button-color:      white;
+$button-background: $color-secondary;
+
+$heading-color:     $color-primary;

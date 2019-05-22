@@ -1,0 +1,13 @@
+/**
+ * margin-left: 0; pour :first-child 
+ * margin-right: 0; pour :last-child
+ */
+
+@mixin margin-first-last {
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}

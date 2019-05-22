@@ -1,0 +1,52 @@
+{
+  "sitename": "Site name",
+  "globalUrl": ".",
+  "assetsUrl": "./assets",
+  "color": "#f2f032",
+  "logo": "",
+  "header": {
+    "navigation": [
+      {
+        "id": 1,
+        "title": "Accueil",
+        "url": "index.html"
+      },
+      {
+        "id": 2,
+        "title": "Services",
+        "url": "#"
+      },
+      {
+        "id": 3,
+        "title": "Contact",
+        "url": "#"
+      }
+    ]
+  },
+  "footer": {
+    "navigation": [
+      {
+        "id": 1,
+        "title": "Vie privée",
+        "url": "#"
+      },
+      {
+        "id": 2,
+        "title": "Conditions d’utilisation",
+        "url": "#"
+      }
+    ],
+    "author": {
+      "label": "Site internet créé par ALIVE & K",
+      "url": "https://www.aliveandk.be",
+      "target": "_blank"
+    }
+  },
+  "social": [
+    {
+      "label": "Facebook",
+      "icon": "facebook",
+      "url": "#"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+/**
+ * Segment for splitlines script
+ */
+
+.segment {
+  display: block;
+  overflow: hidden;
+
+  .segment-text {
+    display: block;
+    opacity: 0;
+    transform: translate(0, 105%);
+    transition: transform .75s $ease-out-quart;
+  }
+}
+
+.is-animate {
+  .segment {
+    @for $i from 1 through 20 {
+      &:nth-child(#{$i}) {
+        .segment-text {
+          opacity: 1;
+          transform: translate(0, 0);
+          transition-delay: ($i * .2s) + 0.4s;
+        }
+      }
+    }
+  }
+}

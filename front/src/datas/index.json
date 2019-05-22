@@ -1,0 +1,11 @@
+{
+  "head": {
+    "title": "Homepage",
+    "description": "Page description"
+  },
+  "components": [
+    {
+      "type": "hero"
+    }
+  ]
+}

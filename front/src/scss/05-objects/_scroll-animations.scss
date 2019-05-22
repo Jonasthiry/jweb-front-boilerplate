@@ -1,0 +1,22 @@
+/**
+ * Animate elements on scroll
+ */
+
+$transition: $ease-out-quint;
+$time: .75s;
+
+[data-animate] {
+  transition: transform $time $transition, opacity $time $transition;
+  opacity: 0;
+  transform: translateY(25px);
+
+  &[data-parallax] {
+    transform: translateY(60px);
+  }
+
+  &.is-animate {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}

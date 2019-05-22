@@ -1,0 +1,15 @@
+{
+  "text": "<p>We use cookies to track usage and preferences.</p>",
+  "buttons": [
+    {
+      "label": "I understand",
+      "url": "#js-accept-cookies",
+      "icon": "angle-right"
+    },
+    {
+      "label": "More info",
+      "url": "#",
+      "icon": "angle-right"
+    }
+  ]
+}

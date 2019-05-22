@@ -1,0 +1,47 @@
+@mixin field-group {
+  position: relative;
+  margin: 20px 10px;
+}
+
+@mixin field-label {
+  display: inline-block;
+  color: $color-text;
+}
+
+@mixin field {
+
+  display: block;
+  background-color: white;
+  border: 0;
+  border-radius: 0px;
+  line-height: 20px;
+  padding: 15px 20px;
+  font-family: $font-primary;
+  font-size: 16px;
+  color: $color-text;
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  
+  margin: 0;
+  
+  outline: none;
+
+  transition: background 0.3s $ease-out-quad, border 0.3s $ease-out-quad;
+
+  .error & {
+    border-color: rgba(red,0.5);
+  }
+
+  &:focus {
+    //background-color: white;
+  }
+
+  &:invalid {
+    box-shadow: none;
+    &:focus {
+      //border: 1px solid red;
+    }
+  }
+
+}
